@@ -236,7 +236,7 @@ local function applytrickster(inst)
 	text.Parent = game.CoreGui
 	local label = Instance.new("TextLabel")
 	label.Size = UDim2.new(1, 0, 1, 0)
-	label.Text = "Fake"
+	label.Text = "Fake Door"
 	label.TextColor3 = Color3.new(1, 1, 1) 
 	label.BackgroundTransparency = 1
 	label.TextStrokeTransparency = 0
