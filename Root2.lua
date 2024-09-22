@@ -34,8 +34,8 @@ Lobby:AddButton({
 })
 Tab:AddSlider({
 	Name = "Set Walkspeed",
-	Min = 0,
-	Max = 100,
+	Min = 16,
+	Max = 65,
 	Default = 16,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
