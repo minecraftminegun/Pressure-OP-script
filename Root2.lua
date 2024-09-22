@@ -106,7 +106,7 @@ Tab:AddToggle({
 })
 Tab:AddToggle({
 	Name = "No Steams",
-	Default = false,
+	Default = true,
 	Flag = "steaming",
 	Save = true
 })
