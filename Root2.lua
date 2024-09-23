@@ -49,7 +49,7 @@ Tab:AddButton({
 	Name = "Fullbright",
 	Callback = function()
 		local lighting = game.Lighting
-		lighting.Brightness = 2
+		lighting.Brightness = 6
 		lighting.ClockTime = 14
 		lighting.FogEnd = 100000
 		lighting.GlobalShadows = false
@@ -144,7 +144,7 @@ Tab:AddToggle({
 	end    
 })
 Tab:AddToggle({
-	Name = "Monster Locker ESP",
+	Name = "Void Locker ESP",
 	Default = true,
 	Flag = "monsterlocker",
 	Save = true,
@@ -326,3 +326,34 @@ end
 game:GetService("RunService").Heartbeat:Connect(function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = sp
 end)
+
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+---//DISCORD SERVER INVITE
+Tab:AddButton({
+	Name = "Copy link to discord",
+	Callback = function()
+      	setclipboard('https://discord.gg/5EdX8SCAqM')
+	end
+})
+
+Tab:AddLabel("Made by minecraft_minegun#0")
+Tab:AddLabel("Subscribe to @fallenkingchannel3627 on youtube!")
+
+OrionLib:MakeNotification({
+	Name = "GUI",
+	Content = "Successfully loaded GUI",
+	Image = "rbxassetid://4483345998",
+	Time = 6
+})
+
+OrionLib:MakeNotification({
+	Name = "GUI",
+	Content = "Copied link to the discord server!",
+	Image = "rbxassetid://4483345998",
+	Time = 8
+})
